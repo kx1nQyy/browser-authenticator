@@ -6,16 +6,16 @@ const inputPassword = prompt('Enter your password');
 
 let isAuthenticated = false;
 
-let notMatchText = 'The username or password do not match';
+const errorMessage = 'The username or password do not match';
 
 if (userLogin === inputLogin) {
-    
+
     if (userPassword === inputPassword) {
         isAuthenticated = true;
         alert('The password matches');
     } else {
-        alert(notMatchText);
+        alert(errorMessage);
     }
 } else {
-    alert(notMatchText);
+    alert(errorMessage);
 }
